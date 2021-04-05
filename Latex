@@ -1,0 +1,355 @@
+\documentclass[titlepage,12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages}
+\usepackage[spanish]{babel}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage[margin=2.54cm]{geometry}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{subfigure}
+
+
+\begin{titlepage}
+
+\title{\textbf{Task 4}}
+\author{Johann Alexander Romero Riveros \ \\  ITC -  jaromerorretolau@itc.edu.co \\\ Reporte numero 4}
+\date{\today}
+\end{titlepage}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+\section{Introducción}
+En el presente reporte se mostrará la solución de los ciclos 1 y 2 que darán conocimiento al manejo de la máquina virtual de Windows en el ciclo 1 y luego se hará el manejo de la máquina virtual de Ubuntu en el ciclo 2, por medio de una página web donde se ejecutará algo superior al 75\% del rendimiento de esta, documentando el paso a paso de lo que sucede en esta.
+\\{\it Máquina, Windows, virtual, web}
+\section{Objetivos}
+\begin{itemize}
+    \item Conocer algunos comandos básicos de la máquina de Windows que se utilizan a diario, pero de forma interactiva con el mouse, en este caso se ejecutara todo a partir del teclado.
+    \item Ejecutar la máquina virtual de Ubuntu para explorar y analizar un performance superior al 75\%.
+    \item Documentar los resultados obtenidos en cada paso y punto presentado en la guía de trabajo.
+
+\end{itemize}
+\newpage
+\section{Solución}
+\subsection{Ciclo 1 parte 1} 
+\subsubsection{TASKLIST}
+Te muestra la lista completa de todos los procesos que tienes en ejecución en tu sistema, así como la cantidad de memoria que está utilizando cada uno de ellos.
+
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.5]{Imagenes/Numero 1.png}
+   \caption{Comando TASKLIST}
+   \label{fig:tsklist}
+   \end{figure}
+\subsubsection{CHKDSK}
+Cuando algo falla en tu ordenador, este suele ser uno de los primeros comandos a los que recurrir. Realiza un análisis de la superficie del disco duro para detectar fallos como posibles sectores defectuosos, y también hace comprobaciones en la estructura lógica del sistema de archivos y repara cualquier error (archivos perdidos, nombres sin sentido, carpetas a las que no se puede acceder, etc.).
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.7]{Imagenes/Numero 2.png}
+   \caption{Comando CHKDSK}
+   \label{fig:CHKDSK}
+   \end{figure}
+\subsubsection{TYPE}
+Te permite crear un archivo desde la propia ventana de comandos. Esto quiere decir que no sólo vas a crear un archivo, sino que también podrás escribir el texto que quieras en su interior.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.7]{Imagenes/numero 2.2.PNG}
+   \caption{Comando TYPE}
+   \label{fig:TYPE}
+   \end{figure}
+
+\subsubsection{Move}
+Mueve el archivo concreto que quieras del lugar o carpeta en el que está a otra dirección que le digas. Es como copiar, pero sin dejar el archivo en su ubicación original.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.7]{Imagenes/Numero 3.png}
+   \caption{Comando MOVE}
+   \label{fig:MOVE}
+   \end{figure}
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.7]{Imagenes/Numero 3.1.png}
+   \caption{Comando MOVE ejecutado}
+   \label{fig:move_2}
+   \end{figure}
+\subsubsection{NETSTAT}
+Analiza y muestra las estadísticas del protocolo y las conexiones TCP/IP en uso por tus dispositivos. Con ello, puedes solucionar posibles problemas de conexión mirando el estado de los puertos y conexiones de tu equipo.
+
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.7]{Imagenes/Numero 4.png}
+   \caption{Comando NETSTAT}
+   \label{fig:net}
+   \end{figure}
+\subsubsection{TIME}
+Ya sea porque estás absorto utilizando la consola o porque quieres identificar algún problema surgido de una posible desincronización de horarios, este comando te muestra la hora exacta que tiene tu ordenador.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.9]{Imagenes/Numero 5.png}
+   \caption{Comando TIME}
+   \label{fig:time}
+   \end{figure}
+\subsubsection{VER}
+Desde la linea de comando con el comando VER puedes conocer la version de tu sistema operativo.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.9]{Imagenes/Numero 6.png}
+   \caption{Comando VER}
+   \label{fig:ver}
+   \end{figure}   
+\subsubsection{DRIVERQUERY}
+Te muestra la lista completa de todos los drivers que tienes instalados en el ordenador, con su nombre de módulo, nombre completo y el tipo de controlador del que se trata.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.6]{Imagenes/Numero 7.png}
+   \caption{Comando DRIVERQUERY}
+   \label{fig:time}
+   \end{figure}
+\subsubsection{TASKKILL /PID}
+En la lista anterior, a cada proceso se le asigna un PID o Número identificador del proceso. Pues bien, con este comando podrás cerrar el proceso cuyo número le hayas indicado.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.4]{Imagenes/Numero 8.png}
+   \caption{Comando TASKKILL /PID}
+   \label{fig:tasss}
+   \end{figure}
+\subsubsection{SFC}
+Examina la integridad de todos los archivos de tu sistema y reemplaza los que detecte que estén dañados utilizando las copias en caché del sistema. Para poder utilizar este comando tienes que haber ejecutado el Símbolo de sistema como administrador, ya que necesita de esos permisos.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.9]{Imagenes/Numero 9.png}
+   \caption{Comando SFC}
+   \label{fig:sfc}
+   \end{figure}
+\subsubsection{DEFRAG}
+Inicia la desfragmentación del disco duro que le indiques. Igual que la aplicación nativa que Windows tiene para ello.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.5]{Imagenes/Numero 10.png}
+   \caption{Comando DEFRAG}
+   \label{fig:defrag}
+   \end{figure}
+\subsubsection{SHUTDOWN}
+Sirve para apagar el ordenador directamente desde la consola de comandos de Windows. Puedes añadirle el atributo -s -t TiempoEnSegundos para programar el apagado, o escribir simplemente SHUTDOWN -R para reiniciar el ordenador.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.5]{Imagenes/Numero 11.png}
+   \caption{Comando SHUTDOWN}
+   \label{fig:shutdown}
+   \end{figure}
+\subsubsection{LOGOFF}
+Cierra la sesión del usuario con el que estás accediendo al ordenador, aunque manteniendo el ordenador encendido.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.9]{Imagenes/Numero 12.png}
+   \caption{Comando LOGOFF}
+   \label{fig:logoff}
+   \end{figure}
+\subsubsection{COLOR}
+COLOR cambia los colores de primer plano (texto) y de fondo en la ventana del Símbolo del sistema (Command Prompt) para la sesión actual. COLOR es un comando interno de cmd.exe.
+\newpage
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.5]{Imagenes/Numero 13.1.png}
+   \caption{Comando COLOR}
+   \label{fig:COLOR}
+   \end{figure}
+\begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.5]{Imagenes/Numero 13.2.png}
+   \caption{Comando COLOR ejecutado}
+   \label{fig:color2}
+   \end{figure}
+\subsubsection{MORE}
+Muestra la información pantalla por pantalla.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.7]{Imagenes/Numero 14.png}
+   \caption{Comando MORE}
+   \label{fig:more}
+   \end{figure}
+\subsubsection{PRINT}
+Imprime un archivo de texto.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.7]{Imagenes/Numero 15.png}
+   \caption{Comando PRINT}
+   \label{fig:PRINT}
+   \end{figure}
+\subsubsection{RECOVER}
+Recupera la información legible de un disco dañado o defectuoso.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.7]{Imagenes/Numero 16.png}
+   \caption{Comando RECOVER}
+   \label{fig:RECOVER}
+   \end{figure}
+\subsection{Ciclo 1 parte 2}
+\subsubsection{Paso 1}
+En el escritorio de su equipo crear una Carpeta de nombre Curso1 
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.5]{Imagenes2/1.png}
+   \caption{Curso 1}
+   \label{fig:cu1}
+   \end{figure}
+\subsubsection{Paso 2}
+Dentro de esta carpeta vamos a crear un archivo de nombre carta1 (block de notas)
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.5]{Imagenes2/2.png}
+   \caption{Carta 1}
+   \label{fig:ca1}
+   \end{figure}
+\subsubsection{Paso 3}
+Digite el comando cd Desktop y luego presione ENTER.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.5]{Imagenes2/3.PNG}
+   \caption{Desktop}
+   \label{fig:desktop}
+   \end{figure}
+\subsubsection{Paso 4}
+Digite el comando cd curso1 y luego presione ENTER. Este comando permite ubicarse en la carpeta curso1. Luego, digite dir para ver los archivos que contiene adentro.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.5]{Imagenes2/4.png}
+   \caption{Comando: DIR Curso 1}
+   \label{fig:dircurso1}
+   \end{figure}
+\subsubsection{Paso 5}
+Digite el comando del carta1.txt y luego presione ENTER. Este comando permite borrar el archivo carta1.txt de la carpeta curso1.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.5]{Imagenes2/5.png}
+   \caption{ Comando: Del carta1.txt}
+   \label{fig:delcarta1}
+   \end{figure}
+\subsubsection{Paso 5}
+Digitar el comando mkdir tutorial y luego presionar ENTER. Este comando permite crear la carpeta llamada tutorial en el escritorio.
+
+Luego verificamos que la carpeta efectivamente se haya creado, para hacerlo digitamos el comando \textbf{DIR}.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.5]{Imagenes2/6.png}
+   \caption{ Comando para crear la carpeta tutorial}
+   \label{fig:tutorial}
+   \end{figure}
+\subsubsection{Paso 6}
+Digitar el comando tree y luego presionar ENTER. Este comando permite ver la estructura de arbol.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.5]{Imagenes2/7.PNG}
+   \caption{ Comando TREE}
+   \label{fig:TREE}
+   \end{figure}
+\subsubsection{Paso 7}
+Digitar el comando rename carta2.txt nuevo.txt, luego presionar ENTER. Este comando permite renombrar o cambiar el nombre a un archivo. En este caso carta2.txt por nuevo.txt.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.5]{Imagenes2/8.PNG}
+   \caption{ Comando Rename}
+   \label{fig:rename}
+   \end{figure}
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.5]{Imagenes2/8.1.PNG}
+   \caption{ Comando Rename ejecutado}
+   \label{fig:renameeje}
+   \end{figure}
+\subsubsection{Paso 8}
+Digitar el comando start excel y luego presionar ENTER. Este comando permite abrir la interfaz de excel.
+\vspace{4cm}
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.4]{Imagenes2/9.png}
+   \caption{ Comando Start excel}
+   \label{fig:start}
+   \end{figure}
+\subsubsection{Paso 9}
+Desde la linea de comando puedo ver el administrador de tareas, con el comando taskmgr puedo ver que tareas se estan realizando.
+\textbf{start taskmgr} y me despliega la sigueinte ventana:
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.4]{Imagenes2/10.png}
+   \caption{ Comando Start taskmgr}
+   \label{fig:startkmgr}
+   \end{figure}
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.4]{Imagenes2/10.1.png}
+   \caption{Taskmgr}
+   \label{fig:kmgr}
+   \end{figure}
+\subsubsection{Paso 10}
+Con el comando dxdiag podemos ver la sisguiente ventana con todas las caracteristicas de la computadora.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.4]{Imagenes2/11.png}
+   \caption{Comando Dxdiag}
+   \label{fig:diag}
+   \end{figure}
+\subsubsection{Paso 11}
+Con el comando systeminfo puedo ver las propiedades de la computadora.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.4]{Imagenes2/12.png}
+   \caption{Comando Systeminfo}
+   \label{fig:systeminfo}
+   \end{figure}
+\subsubsection{Paso 12}
+Con el comando control puedo acceder al Panel de control.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.4]{Imagenes2/13.PNG}
+   \caption{Comando Control}
+   \label{fig:control}
+   \end{figure}
+\subsubsection{Paso 13}
+Con el comando Ping podemos conocer la velocidad de ida y vuelta de nuestra computadora con un servidor o cualquier pagina Web (Ej: google.com)
+\vspace{3 cm}
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.4]{Imagenes2/14.PNG}
+   \caption{Comando Ping}
+   \label{fig:ping}
+   \end{figure}
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.4]{Imagenes2/15.PNG}
+   \caption{Comando Ping 2}
+   \label{fig:ping 2}
+   \end{figure}
+\subsection{Ciclo 2} 
+\subsubsection{Docomentación Ubuntu}
+Primero se ejecuto la maquina virtual de Ubuntu.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.3]{Imagenes3/u1.png}
+   \caption{Interfaz de Ubuntu}
+   \label{fig:u1}
+   \end{figure}
+   
+Luego, se ingreso al monitor del sistema.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.3]{Imagenes3/u2.png}
+   \caption{Monitor del sistema de Ubuntu}
+   \label{fig:u2}
+   \end{figure}
+   
+Y, por último, se procedió a ejecutar las aplicaciones de este, a tal punto que superara el 75\% del performance. El único que no se movió en la gráfica fue el de la red debido a que por alguna razón no me permitió establecer una conexión.
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.5]{Imagenes3/u3.png}
+   \caption{Monitor del sistema de Ubuntu ejecutandoce}
+   \label{fig:u3}
+   \end{figure}
+\begin{thebibliography}{0}
+\bibitem{Wilmer2021} Lopez, W. L. (2021). Task 4
+\end{thebibliography}
+
+
+\end{document}
